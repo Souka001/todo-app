@@ -2,7 +2,7 @@
   "name": "to-do-list",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Souka001.github.io/todo-app",
+  "homepage": "https://souka001.github.io/todo-app",
   "dependencies": {
     "bootstrap": "^5.3.3",
     "cra-template": "1.2.0",

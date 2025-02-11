@@ -7,9 +7,9 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif; /* Akhtar font simple o chaba */
-  color: #333; /* Color dyal lktaba clear */
-  line-height: 1.6; /* Bch tkoun lktaba wadiha */
+  font-family: 'Arial', sans-serif; 
+  color: #333; 
+  line-height: 1.6; 
   background-color: #F4C27F !important;
 }
 
@@ -79,15 +79,7 @@ color: #FFFFFF;
 
 
 }
-/* Add global styles for the body and fonts */
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
-  line-height: 1.6;
-}
 
-/* ToDo Page Specific Styles */
 h1 {
   font-family: 'Comfortaa', cursive;
   font-size: 2.5rem;
