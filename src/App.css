@@ -67,7 +67,7 @@ margin-left: 100px;
 
 .start{
 
-width: 81px;
+width: 91px;
 height: 22px;
 font-family: 'Poppins';
 font-style: normal;
@@ -88,8 +88,10 @@ color: #FFFFFF;
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
   border-radius: 50px ;
   border: none !important;
-  margin-top: 10px;
-  margin-left: 80px;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+ 
   
   }
   
