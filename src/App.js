@@ -6,10 +6,10 @@ import ToDoPage from './components/TodoPage';
 
 function App() {
   return (
-    <HashRouter> {/* Use HashRouter here */}
+    <HashRouter> 
       <Routes>
         <Route path="#/" element={<FirstPage />} />
-        <Route path="/todo" element={<ToDoPage />} />
+        <Route path="#/todo" element={<ToDoPage />} />
       </Routes>
     </HashRouter>
   );
