@@ -1,0 +1,216 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');/* Reset de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif; /* Akhtar font simple o chaba */
+  background-color: #f9f9f9; /* Lkhlfiya bright w comfortable */
+  color: #333; /* Color dyal lktaba clear */
+  line-height: 1.6; /* Bch tkoun lktaba wadiha */
+  background-color: #F4C27F !important;
+}
+
+/* Flexbox - Tarti alignment */
+
+
+h6 {
+  font-size: 1.2rem;
+  color: #f39c12;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Comfortaa', cursive;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+  text-align: center;
+}
+h2 {
+  font-size: 1.75rem; /* Title lmedium */
+}
+
+p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.espacebtn{
+  margin: 3px;
+}
+
+
+.moving-image{
+  width: 100%;
+}
+.btnstart{
+position: absolute;
+width: 315px;
+height: 56px;
+background: linear-gradient(267.72deg, #D8605B -0.89%, #F4C27F 112.29%);
+mix-blend-mode: normal;
+box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+border-radius: 50px ;
+border: none;
+margin-top: 10px;
+margin-left: 100px;
+
+}
+.btnstart:hover {
+  background: linear-gradient(267.72deg, #f4c27f -0.89%, #d8605b 112.29%);
+}
+
+.start{
+
+width: 81px;
+height: 22px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+text-align: center;
+letter-spacing: 0.06em;
+color: #FFFFFF;
+
+
+}
+/* Add global styles for the body and fonts */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ToDo Page Specific Styles */
+h1 {
+  font-family: 'Comfortaa', cursive;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.75rem;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.task-list {
+  margin-top: 20px;
+}
+
+.task-item {
+  background-color: white;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-item.completed {
+  text-decoration: line-through;
+  background-color: #dcdcdc;
+}
+
+button {
+  background: linear-gradient(267.72deg, #D8605B -0.89%, #F4C27F 112.29%);
+  mix-blend-mode: normal;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 50px;
+  border: none !important;
+  
+ 
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  
+
+}
+
+button:hover {
+  background: linear-gradient(267.72deg, #F4C27F -0.89%, #D8605B 112.29%);
+}
+
+/* Input field for tasks */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #D8605B;
+}
+
+.task-item span {
+  font-size: 1.1rem;
+  color: #333;
+  flex-grow: 1;
+}
+
+.task-item .check-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #D8605B;
+
+}
+
+/* Container and Row for layout */
+.container {
+  margin-top: 50px;
+}
+
+.row {
+  justify-content: center;
+}
+
+.col-md-6 {
+  padding: 15px;
+}
+
+input[type="text"], button {
+  margin-bottom: 20px;
+}
+
+.task-item .task-icons {
+  display: flex;
+  justify-content: space-between; 
+  gap: 10px; 
+  align-items: center; 
+}
+
+.task-item .task-icons img {
+  width: 34px !important; 
+  height: 34px !important;
+  cursor: pointer;
+  transition: transform 0.2s ease; 
+}
+
+.task-item .task-icons img:hover {
+  transform: scale(1.2); 
+}
+
+.task-item .task-icons img:active {
+  transform: scale(1); 
+}
