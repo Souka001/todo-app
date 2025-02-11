@@ -154,78 +154,81 @@ function ToDoPage() {
               </Button>
             )}
 
-            <div className="task-list mt-4">
-              {tasks.map((t) => (
-                <div
-                  key={t.id}
-                  className={`task-item ${t.completed ? "completed" : ""}`}
-                >
-                  <span
-                    onClick={() => handleToggleComplete(t.id)}
-                    style={{
-                      textDecoration: t.completed ? "line-through" : "none",
-                      cursor: "pointer",
-                    }}
-                  >
-                    {t.text}
-                  </span>
-                  {t.confirmed === null && (
-                    <div className="mt-3 task-icons">
-                      <img
-                        src={verified}
-                        alt="Confirm"
-                        onClick={() => handleConfirmTask(t.id)}
-                        style={{
-                          cursor: "pointer",
-                          width: "20px",
-                          height: "20px",
-                        }}
-                      />
-                      <img
-                        src={write}
-                        alt="Edit Task"
-                        onClick={() => handleEditTask(t)}
-                        style={{
-                          cursor: "pointer",
-                          width: "20px",
-                          height: "20px",
-                        }}
-                      />
-                      <img
-                        src={bin}
-                        alt="Delete Task"
-                        onClick={() => handleOpenDeleteModal(t)} 
-                        style={{
-                          cursor: "pointer",
-                          width: "20px",
-                          height: "20px",
-                        }}
-                      />
-                    </div>
-                  )}
+<div className="task-list mt-4">
+  {tasks.map((t) => (
+    <div
+      key={t.id}
+      className={`task-item ${t.completed ? "completed" : ""}`}
+    >
+      <span
+        onClick={() => t.confirmed === null && handleConfirmTask(t.id)} 
+        style={{
+          cursor: "pointer",
+          textDecoration: t.confirmed !== null ? "line-through" : "none", // Add line-through if confirmed
+          padding: "0 5px", 
+        }}
+      >
+        {t.text}
+      </span>
 
-                  {t.confirmed !== null && (
-                    <div className="mt-3 task-icons">
-                      <span
-                        className={t.confirmed ? "text-success" : "text-danger"}
-                      >
-                        {t.confirmed ? "Confirmed" : "Discarded"}
-                      </span>
-                      <img
-                        src={bin}
-                        alt="Delete Task"
-                        onClick={() => handleOpenDeleteModal(t)} 
-                        style={{
-                          cursor: "pointer",
-                          width: "20px",
-                          height: "20px",
-                        }}
-                      />
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
+      {t.confirmed === null && (
+        <div className="mt-3 task-icons">
+          <img
+            src={verified}
+            alt="Confirm"
+            onClick={() => handleConfirmTask(t.id)}
+            style={{
+              cursor: "pointer",
+              width: "20px",
+              height: "20px",
+            }}
+          />
+          <img
+            src={write}
+            alt="Edit Task"
+            onClick={() => handleEditTask(t)}
+            style={{
+              cursor: "pointer",
+              width: "20px",
+              height: "20px",
+            }}
+          />
+          <img
+            src={bin}
+            alt="Delete Task"
+            onClick={() => handleOpenDeleteModal(t)} 
+            style={{
+              cursor: "pointer",
+              width: "20px",
+              height: "20px",
+            }}
+          />
+        </div>
+      )}
+
+      {t.confirmed !== null && (
+        <div className="mt-3 task-icons">
+          <span
+            className={t.confirmed ? "text-success" : "text-danger"}
+          >
+            {t.confirmed ? "Confirmed" : "Discarded"}
+          </span>
+          <img
+            src={bin}
+            alt="Delete Task"
+            onClick={() => handleOpenDeleteModal(t)} 
+            style={{
+              cursor: "pointer",
+              width: "20px",
+              height: "20px",
+            }}
+          />
+        </div>
+      )}
+    </div>
+  ))}
+</div>
+
           </div>
         </Col>
       </Row>
