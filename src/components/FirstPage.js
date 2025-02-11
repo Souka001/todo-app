@@ -8,7 +8,7 @@ function FirstPage() {
   const navigate = useNavigate();  
 
   const handleClick = () => {
-    navigate("/#/#todo");  
+    navigate("/#todo");  
   };
 
   return (
