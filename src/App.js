@@ -9,7 +9,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/#" element={<FirstPage />} />
-        <Route path="/#/todo" element={<ToDoPage />} />
+        <Route path="/#/#todo" element={<ToDoPage />} />
       </Routes>
     </Router>
   );
