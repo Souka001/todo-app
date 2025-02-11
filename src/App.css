@@ -79,7 +79,20 @@ color: #FFFFFF;
 
 
 }
-
+.btnstart{
+  position: absolute;
+  width: 315px;
+  height: 56px;
+  background: linear-gradient(267.72deg, #D8605B -0.89%, #F4C27F 112.29%);
+  mix-blend-mode: normal;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 50px ;
+  border: none !important;
+  margin-top: 10px;
+  margin-left: 80px;
+  
+  }
+  
 h1 {
   font-family: 'Comfortaa', cursive;
   font-size: 2.5rem;
