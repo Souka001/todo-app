@@ -1,17 +1,17 @@
 import './App.css';
 import FirstPage from './components/FirstPage'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom"; // Add HashRouter here
 import ToDoPage from './components/TodoPage';
 
 function App() {
   return (
-    <Router>
+    <HashRouter> {/* Use HashRouter here */}
       <Routes>
         <Route path="/#" element={<FirstPage />} />
-        <Route path="/#todo" element={<ToDoPage />} />
+        <Route path="/#/todo" element={<ToDoPage />} />
       </Routes>
-    </Router>
+    </HashRouter>
   );
 }
 
