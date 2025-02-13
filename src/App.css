@@ -11,6 +11,19 @@ body {
   color: #333; 
   line-height: 1.6; 
   background-color: #F4C27F !important;
+  min-height: 100vh; /* Assure une hauteur totale de la page */
+  display: flex;
+  flex-direction: column;
+
+}
+main {
+  flex: 1; 
+}
+@media (min-width:1700px) {
+	main .container {
+		max-width: 100%;
+		padding: 0 150px;
+	}
 }
 
 /* Flexbox - Tarti alignment */
@@ -58,7 +71,11 @@ box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
 border-radius: 50px ;
 border: none;
 margin-top: 10px;
+<<<<<<< HEAD
 margin-left: 90px;
+=======
+margin-left: 120px !important;
+>>>>>>> 14789f4 (resp)
 
 }
 .btnstart:hover {
@@ -79,8 +96,18 @@ color: #FFFFFF;
 
 
 }
+.btn-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  width: 100%;
+  margin-top: 34px;
+  margin-left: -50px;
+}
+
+
 .btnstart{
-  position: absolute;
+  /* position: absolute; */
   width: 315px;
   height: 56px;
   background: linear-gradient(267.72deg, #D8605B -0.89%, #F4C27F 112.29%);
@@ -88,11 +115,12 @@ color: #FFFFFF;
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
   border-radius: 50px ;
   border: none !important;
-  margin-top: 10px;
+  /* margin-top: 10px;
   margin-left: 70px;
-  
+   */
   }
-  
+
+
 h1 {
   font-family: 'Comfortaa', cursive;
   font-size: 2.5rem;

@@ -27,10 +27,12 @@ function FirstPage() {
               Manage your tasks easily and stay on top of your day. Keep track
               of what's important!
             </p>
+            <div className="btn-container">
             <button className="btnstart" onClick={handleClick}>
               <span className="start">Get Started</span>
               <img src={Vector} alt="imgflesh" />
             </button>
+            </div>
           </div>
         </Col>
       </Row>
